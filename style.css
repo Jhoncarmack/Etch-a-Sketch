@@ -6,19 +6,28 @@
   margin: 0;
   padding: 0;
 }
-body div {
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+.container {
   width: 1000px;
   height: 800px;
   border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: auto;
 }
 body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
+.tile {
+  border: 1px solid black;
+  width: 120px;
+  height: auto;
 }
