@@ -37,3 +37,6 @@ body {
 .box {
   border: 1px solid black;
 }
+.color {
+  background-color: blue;
+}
