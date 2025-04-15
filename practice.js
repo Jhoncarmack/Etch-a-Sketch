@@ -9,9 +9,7 @@ const oldDiv = document.createElement("div");
 oldDiv.appendChild(newDiv);
 body.appendChild(oldDiv);
 oldDiv.classList.add("old");
-// btn.className = "button";
-// btn.style.height = "auto";
-// btn.textContent = "button";
+
 btn.classList.add("button-style");
 btn.textContent = "Sketch";
 const container = document.querySelector(".container");
@@ -36,8 +34,16 @@ btn.addEventListener("click", (Event) => {
       divP.classList.add("box");
 
       divP.addEventListener("mouseenter", () => {
-        divP.classList.add("color");
+        const newColor = randomRGB();
+        divP.style.backgroundColor = newColor;
       });
     }
   }
 });
+
+function randomRGB() {
+  const rColor = Math.floor(Math.random() * 256);
+  const gColor = Math.floor(Math.random() * 256);
+  const bColor = Math.floor(Math.random() * 256);
+  return `rgb(${rColor},${gColor},${bColor})`;
+}
