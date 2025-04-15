@@ -1,9 +1,19 @@
 const btn = document.createElement("button");
 const body = document.querySelector("body");
 body.appendChild(btn);
-btn.className = "button";
-btn.style.height = "auto";
-btn.textContent = "button";
+const newDiv = document.createElement("div");
+newDiv.classList.add("new");
+body.appendChild(newDiv);
+newDiv.appendChild(btn);
+const oldDiv = document.createElement("div");
+oldDiv.appendChild(newDiv);
+body.appendChild(oldDiv);
+oldDiv.classList.add("old");
+// btn.className = "button";
+// btn.style.height = "auto";
+// btn.textContent = "button";
+btn.classList.add("button-style");
+btn.textContent = "Sketch";
 const container = document.querySelector(".container");
 
 btn.addEventListener("click", (Event) => {
@@ -31,4 +41,3 @@ btn.addEventListener("click", (Event) => {
     }
   }
 });
-console.log("Good");
