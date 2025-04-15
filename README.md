@@ -1,6 +1,5 @@
 # Etch-a-Sketch
 
-<h1>Etch-a-Sketch</h1>
 <ol>
   <li>
     현재 프로젝트는 <strong>브라우저 기반 스케치 패드</strong>입니다. 
