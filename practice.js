@@ -28,12 +28,17 @@ btn.addEventListener("click", (Event) => {
         break;
       }
       const divP = document.createElement("div");
+
       container.appendChild(divP);
       divP.style.width = `calc(100%/${select})`;
       divP.style.height = `calc(100%/${select})`;
       divP.classList.add("box");
 
       divP.addEventListener("mouseenter", () => {
+        let currentOpacity = Number(divP.style.opacity);
+        if (currentOpacity < 1) {
+          divP.style.opacity = currentOpacity + 0.1;
+        }
         const newColor = randomRGB();
         divP.style.backgroundColor = newColor;
       });

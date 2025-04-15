@@ -1,7 +1,19 @@
 # Etch-a-Sketch
 
+<h1>Etch-a-Sketch</h1>
 <ol>
-    <li>현재 프로젝트가 무엇인가</li>
-    <li>프로젝트를 완료했을때 어떤 기술을 보여줄 수 있는지 간단한 소개<li>
+  <li>
+    현재 프로젝트는 <strong>브라우저 기반 스케치 패드</strong>입니다. 
+    사용자가 버튼을 클릭해 원하는 그리드 크기를 입력하면, 마우스 움직임에 따라 색이 변하는 픽셀 드로잉 보드를 제공합니다.
+  </li>
+  <li>
+    프로젝트를 완료했을 때 보여줄 수 있는 기술은 다음과 같습니다:
+    <ul>
+      <li>JavaScript를 통한 DOM 조작 (동적 요소 생성 및 이벤트 리스너 적용)</li>
+      <li>Flexbox를 이용한 그리드 레이아웃 구현</li>
+      <li>prompt, 이벤트 리스너, 조건문, 반복문 활용</li>
+      <li>RGB 색상 무작위 처리 및 투명도(opacity) 제어로 마우스 hover 효과 구현</li>
+      <li>버튼 클릭으로 기존 그리드를 초기화하고 새롭게 생성하는 기능</li>
+    </ul>
+  </li>
 </ol>
-Try to do it for a grid of 2x2 squares first. Can you write the html that does that? If you can do that then try to make your code work for 4x4 and keep increasing until you can see the pattern that your code makes in order to create the grid and turn that pattern into JavaScript.
